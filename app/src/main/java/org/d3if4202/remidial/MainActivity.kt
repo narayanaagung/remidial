@@ -2,10 +2,12 @@ package org.d3if4202.remidial
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.widget.TextView
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
+    private val hewan = listOf("Ayam","Bebek","Domba","Kambing","Sapi")
+    private var index=0;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -15,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showNext(){
-        Log.d("MainActivity","Clicked")
+        index++
+        val textView:TextView=findViewById(R.id.nameTextView)
+        textView.text=hewan[index]
     }
 }
