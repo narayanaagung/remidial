@@ -2,4 +2,5 @@
     <string name="app_name">Galeri Hewan</string>
     <string name="lanjut">Lanjut</string>
     <string name="hewan_default">Ayam</string>
+    <string name="gambar_hewan">Gambar Hewan</string>
 </resources>
