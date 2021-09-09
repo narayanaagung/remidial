@@ -14,7 +14,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val nextButton:Button = findViewById(R.id.nextButton)
+        val backButton:Button = findViewById(R.id.backButton)
         nextButton.setOnClickListener{showNext()}
+        backButton.setOnClickListener{showPrevious()}
     }
 
     private fun showNext(){
