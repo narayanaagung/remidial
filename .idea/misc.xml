@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Kuliah/Android Studio Project/Remidial/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/Android Studio Project/Remidial/app/src/main/res/layout/fragment_dadu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/Android Studio Project/Remidial/app/src/main/res/layout/fragment_koin.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/Android Studio Project/Remidial/app/src/main/res/layout/fragment_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/Android Studio Project/Remidial/app/src/main/res/layout/fragment_random.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Aplikasi Mengundi</string>
+    <string name="kocok">Kocok Dadu</string>
+    <string name="lempar_koin">lempar koin</string>
+    <string name="rng">Random Number Generator</string>
+    <string name="minAngka">Minimum</string>
+    <string name="maxAngka">Maximum</string>
+    <string name="undi">Undi</string>
+    <string name="hasil">%1$s</string>
 </resources>
