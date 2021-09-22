@@ -16,4 +16,5 @@ menentukan apakah berat badanmu ideal atau tidak. Cobalah sekarang!</string>
     <string name="berat_invalid">Berat tidak boleh kosong.</string>
     <string name="tinggi_invalid">Tinggi tidak boleh kosong.</string>
     <string name="gender_invalid">Pilih jenis kelamin.</string>
+    <string name="reset">Reset</string>
 </resources>

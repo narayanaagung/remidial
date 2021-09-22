@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener{hitungBmi()}
+        binding.button2.setOnClickListener{reset()}
     }
 
     private fun hitungBmi(){
@@ -57,5 +58,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return getString(stringRes)
+    }
+
+    //challenge dikerjakan
+    private fun reset(){
+        binding.beratEditText.setText("")
+        binding.tinggiEditText.setText("")
+        binding.radioGroup.clearCheck()
+        binding.bmiTextView.setText("")
+        binding.kategoriTextView.setText("")
     }
 }
