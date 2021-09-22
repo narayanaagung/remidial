@@ -2,8 +2,10 @@ package org.d3if4202.remidial
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.util.Log
 import android.view.LayoutInflater
+import android.widget.Toast
 import org.d3if4202.remidial.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -17,11 +19,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun hitungBmi(){
-        val berat = binding.beratEditText.text.toString().toFloat()
-        val tinggi = binding.tinggiEditText.text.toString().toFloat() / 100
-        val bmi = berat / (tinggi * tinggi)
+        val berat = binding.beratEditText.text.toString()
+        if (TextUtils.isEmpty(berat)) {
+            Toast.makeText(this, R.string.berat_invalid, Toast.LENGTH_LONG).show()
+            return
+        }
+        val tinggi = binding.tinggiEditText.text.toString()
+        if (TextUtils.isEmpty(tinggi)) {
+            Toast.makeText(this, R.string.tinggi_invalid, Toast.LENGTH_LONG).show()
+            return
+        }
+        val tinggiCm = tinggi.toFloat() / 100
         val selectedId = binding.radioGroup.checkedRadioButtonId
+        if (selectedId == -1) {
+            Toast.makeText(this, R.string.gender_invalid, Toast.LENGTH_LONG).show()
+            return
+        }
         val isMale = selectedId == R.id.priaRadioButton
+        val bmi = berat.toFloat() / (tinggiCm * tinggiCm)
         val kategori = getKategori(bmi, isMale)
         binding.bmiTextView.text = getString(R.string.bmi_x, bmi)
         binding.kategoriTextView.text = getString(R.string.kategori_x, kategori)
