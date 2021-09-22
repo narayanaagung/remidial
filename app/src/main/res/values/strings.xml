@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">Remidial</string>
-    <string name="identitas">Agung Narayana Adhi Putra\n 6706180025\n D3IF-42-02</string>
+    <string name="app_name">Hitung BMI</string>
+    <string name="bmi_intro">BMI, atau Body Mass Index merupakan cara untuk
+menentukan apakah berat badanmu ideal atau tidak. Cobalah sekarang!</string>
+    <string name="berat_badan">Berat badan (kg)</string>
+    <string name="tinggi_badan">Tinggi badan (cm)</string>
+    <string name="jenis_kelamin">Jenis kelamin</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="hitung">Hitung</string>
 </resources>
